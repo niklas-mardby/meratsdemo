@@ -37,3 +37,18 @@ const handleTextInput: InputEventHandler = (event) => {
 const textInput = document.querySelector("#fruit") as HTMLInputElement;
 
 textInput.addEventListener("input", handleTextInput as EventListener);
+
+// ====== DEL 3ish ===========================================
+
+const x: number = 12;
+console.log(typeof x);
+
+const testElement = document.querySelector("#fruit");
+// console.log(testElement instanceof HTMLInputElement);
+
+if (testElement instanceof HTMLInputElement) {
+	console.log("ja");
+	//narrowing!!
+} else {
+	console.log("nej");
+}
